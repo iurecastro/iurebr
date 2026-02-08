@@ -1,7 +1,19 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
+# Iure.com.br Robots.txt
 User-agent: *
 Allow: /
+Disallow: /assets/private/
+Disallow: /temp/
 
+# Prevenir bots de IA de minerar seus dados sem permissão (Opcional)
+User-agent: GPTBot
+Disallow: /
+
+# Otimização para o Google
+User-agent: Googlebot
+Allow: /
+# Garante que o Google possa renderizar seu CSS/JS para o Core Web Vitals
+Allow: /assets/css/*.css
+Allow: /assets/js/*.js
+
+# Caminho do Sitemap
 Sitemap: https://iure.com.br/sitemap.xml
